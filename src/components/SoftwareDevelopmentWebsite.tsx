@@ -125,10 +125,10 @@ const transitionVariants = {
 }
 
 const menuItems = [
-  { name: "Каталог агентств", href: "#services" },
-  { name: "Как выбрать", href: "#solutions" },
-  { name: "О платформе", href: "#about" },
-  { name: "Контакты", href: "#contact" },
+  { name: "Agency Directory", href: "#services" },
+  { name: "How to Choose", href: "#solutions" },
+  { name: "About", href: "#about" },
+  { name: "Contact", href: "#contact" },
 ]
 
 const HeroHeader = () => {
@@ -162,7 +162,7 @@ const HeroHeader = () => {
 
               <button
                 onClick={() => setMenuState(!menuState)}
-                aria-label={menuState == true ? "Закрыть меню" : "Открыть меню"}
+                aria-label={menuState == true ? "Close menu" : "Open menu"}
                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
                 <Menu className="in-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
@@ -202,7 +202,7 @@ const HeroHeader = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button variant="outline" size="sm" className={cn(isScrolled && "lg:hidden")}>
-                  <span>Войти</span>
+                  <span>Sign In</span>
                 </Button>
                 <Button
                   size="sm"
@@ -212,7 +212,7 @@ const HeroHeader = () => {
                       : "hidden bg-orange-500 hover:bg-orange-600",
                   )}
                 >
-                  <span>Найти агентство</span>
+                  <span>Find Agency</span>
                 </Button>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function SoftwareDevelopmentWebsite() {
                     href="#services"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
-                    <span className="text-foreground text-sm">Более 25 проверенных SEO-агентств в каталоге</span>
+                    <span className="text-foreground text-sm">Over 25 verified SEO agencies in the directory</span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                     <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -317,14 +317,14 @@ export default function SoftwareDevelopmentWebsite() {
                   </a>
 
                   <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                    Лучшие SEO-компании{" "}
+                    Top SEO Companies{" "}
                     <span className="inline-block text-orange-500 text-6xl md:text-7xl xl:text-[5.25rem] font-semibold">
-                      и агентства
+                      & Agencies
                     </span>
                   </h1>
                   <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-muted-foreground">
-                    Профессиональные SEO-агентства владеют экспертизой и инструментами для on-page оптимизации,
-                    линкбилдинга и технического SEO. Сравните, выберите и начните привлекать больше клиентов.
+                    Professional SEO agencies have the expertise and tools for on-page optimization,
+                    link building and technical SEO. Compare, choose and start attracting more clients.
                   </p>
                 </AnimatedGroup>
 
@@ -344,11 +344,11 @@ export default function SoftwareDevelopmentWebsite() {
                 >
                   <div key={1} className="bg-orange-500/10 rounded-[14px] border border-orange-200 p-0.5">
                     <Button size="lg" className="rounded-xl px-5 text-base bg-orange-500 hover:bg-orange-600">
-                      <span className="text-nowrap">Найти агентство</span>
+                      <span className="text-nowrap">Find Agency</span>
                     </Button>
                   </div>
                   <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500">
-                    <span className="text-nowrap">Как это работает</span>
+                    <span className="text-nowrap">How It Works</span>
                   </Button>
                 </AnimatedGroup>
               </div>
@@ -383,7 +383,7 @@ export default function SoftwareDevelopmentWebsite() {
                 <div className="group relative m-auto max-w-5xl px-6">
                   <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
                     <a href="#contact" className="block text-sm duration-150 hover:opacity-75 text-orange-500">
-                      <span>Найти подходящее агентство</span>
+                      <span>Find the right agency</span>
                       <ChevronRight className="ml-1 inline-block size-3" />
                     </a>
                   </div>
@@ -392,7 +392,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-5 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="20"
                         width="auto"
                       />
@@ -401,7 +401,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-4 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/column.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="16"
                         width="auto"
                       />
@@ -410,7 +410,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-4 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/github.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="16"
                         width="auto"
                       />
@@ -419,7 +419,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-5 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/nike.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="20"
                         width="auto"
                       />
@@ -428,7 +428,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-5 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="20"
                         width="auto"
                       />
@@ -437,7 +437,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-4 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/laravel.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="16"
                         width="auto"
                       />
@@ -446,7 +446,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-7 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/lilly.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="28"
                         width="auto"
                       />
@@ -455,7 +455,7 @@ export default function SoftwareDevelopmentWebsite() {
                       <img
                         className="mx-auto h-6 w-fit dark:invert opacity-60"
                         src="https://html.tailus.io/blocks/customers/openai.svg"
-                        alt="Логотип клиента"
+                        alt="Client logo"
                         height="24"
                         width="auto"
                       />
@@ -471,10 +471,10 @@ export default function SoftwareDevelopmentWebsite() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="text-center">
               <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-                Почему выбирают <span className="text-orange-500">TopSEO</span>
+                Why Choose <span className="text-orange-500">TopSEO</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Мы оценили более двух десятков SEO-агентств по цене, качеству услуг, репутации и реальному ROI для клиентов.
+                We evaluated over two dozen SEO agencies by price, service quality, reputation and real ROI for clients.
               </p>
             </div>
             <Card className="mx-auto mt-8 grid max-w-sm divide-y overflow-hidden shadow-zinc-950/5 border-orange-200 *:text-center md:mt-16 md:max-w-full md:grid-cols-3 md:divide-x md:divide-y-0">
@@ -484,12 +484,12 @@ export default function SoftwareDevelopmentWebsite() {
                     <TrendingUp className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Проверенный ROI</h3>
+                  <h3 className="mt-6 font-medium">Proven ROI</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Каждое агентство в каталоге отобрано по реальным результатам: рост трафика, позиции и конверсии клиентов.
+                    Every agency in the directory is selected based on real results: traffic growth, rankings and client conversions.
                   </p>
                 </CardContent>
               </div>
@@ -500,12 +500,12 @@ export default function SoftwareDevelopmentWebsite() {
                     <ShieldCheck className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Независимая оценка</h3>
+                  <h3 className="mt-6 font-medium">Independent Review</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Мы независимо оцениваем агентства по десяткам параметров: ценообразование, репутация, виды SEO-услуг и поддержка.
+                    We independently evaluate agencies across dozens of criteria: pricing, reputation, types of SEO services and support.
                   </p>
                 </CardContent>
               </div>
@@ -516,12 +516,12 @@ export default function SoftwareDevelopmentWebsite() {
                     <Star className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Лучшие из лучших</h3>
+                  <h3 className="mt-6 font-medium">Best of the Best</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    В каталоге только топовые SEO-компании: on-page оптимизация, линкбилдинг, технический SEO и продвижение.
+                    Only top-tier SEO companies in the directory: on-page optimization, link building, technical SEO and promotion.
                   </p>
                 </CardContent>
               </div>
@@ -537,7 +537,7 @@ export default function SoftwareDevelopmentWebsite() {
             <div className="space-y-4 sm:col-span-2 lg:col-span-1">
               <Logo />
               <p className="text-sm text-muted-foreground max-w-xs">
-                Ведущий каталог SEO-агентств. Помогаем бизнесу найти лучшего подрядчика для роста трафика и привлечения идеальных клиентов.
+                The leading SEO agency directory. We help businesses find the best partner for traffic growth and attracting ideal clients.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
@@ -560,26 +560,26 @@ export default function SoftwareDevelopmentWebsite() {
 
             {/* Services */}
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold text-foreground">Виды SEO</h3>
+              <h3 className="text-sm font-semibold text-foreground">SEO Types</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    On-page оптимизация
+                    On-page Optimization
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Линкбилдинг
+                    Link Building
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Технический SEO
+                    Technical SEO
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Локальное SEO
+                    Local SEO
                   </a>
                 </li>
                 <li>
@@ -592,31 +592,31 @@ export default function SoftwareDevelopmentWebsite() {
 
             {/* Company */}
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold text-foreground">Платформа</h3>
+              <h3 className="text-sm font-semibold text-foreground">Platform</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    О нас
+                    About Us
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Как мы отбираем
+                    How We Select
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Добавить агентство
+                    Submit Agency
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Кейсы клиентов
+                    Client Case Studies
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Блог об SEO
+                    SEO Blog
                   </a>
                 </li>
               </ul>
@@ -624,7 +624,7 @@ export default function SoftwareDevelopmentWebsite() {
 
             {/* Contact */}
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold text-foreground">Контакты</h3>
+              <h3 className="text-sm font-semibold text-foreground">Contact</h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li className="flex items-center space-x-2">
                   <svg className="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -635,7 +635,7 @@ export default function SoftwareDevelopmentWebsite() {
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="break-all">info@topseo.ru</span>
+                  <span className="break-all">info@topseo.com</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <svg className="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -646,7 +646,7 @@ export default function SoftwareDevelopmentWebsite() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span>+7 (495) 123-45-67</span>
+                  <span>+1 (800) 123-4567</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <svg className="h-4 w-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -664,9 +664,9 @@ export default function SoftwareDevelopmentWebsite() {
                     />
                   </svg>
                   <span>
-                    ул. Технопарковая, 15
+                    123 Tech Park Ave
                     <br />
-                    Москва, 123456
+                    New York, NY 10001
                   </span>
                 </li>
               </ul>
@@ -676,16 +676,16 @@ export default function SoftwareDevelopmentWebsite() {
           {/* Bottom section */}
           <div className="mt-12 pt-8 border-t border-orange-200">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-              <div className="text-sm text-muted-foreground">2024 КодМастер. Все права защищены.</div>
+              <div className="text-sm text-muted-foreground">2024 TopSEO. All rights reserved.</div>
               <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-sm">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Политика конфиденциальности
+                  Privacy Policy
                 </a>
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Условия использования
+                  Terms of Use
                 </a>
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Политика cookies
+                  Cookie Policy
                 </a>
               </div>
             </div>
