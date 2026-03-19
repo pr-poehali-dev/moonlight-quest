@@ -5,6 +5,7 @@ import { ArrowRight, ChevronRight, Menu, X, Search, TrendingUp, ShieldCheck, Sta
 import { motion, type Variants } from "framer-motion"
 import { GridMotion } from "./ui/grid-motion"
 import { cn } from "@/lib/utils"
+import AgencyCatalog from "./AgencyCatalog"
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -528,6 +529,8 @@ export default function SoftwareDevelopmentWebsite() {
             </Card>
           </div>
         </section>
+
+        <AgencyCatalog />
       </main>
 
       <footer className="bg-background border-t border-orange-200">
